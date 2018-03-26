@@ -1,0 +1,14 @@
+
+To resolve this problem, export the following registry keys and delete from computer. 
+
+    Close activation screen.
+    On the Start menu, click Run.
+    Type regedit, and then press Enter.
+    Select the following key in the registry.
+    HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Office\16.0\Common\OEM
+    Right click the OEM value and click File>Export.
+    Save the key
+    Once the key is backed-up, click on Edit>Delete
+    Repeat steps 4-7 with following key
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\16.0\Common\OEM
+    Exit Registry Editor

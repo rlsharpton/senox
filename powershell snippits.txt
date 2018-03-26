@@ -1,0 +1,3 @@
+Set-NetConnectionProfile -interfacealias Ethernet -NetworkCategory Private
+
+get-aduser -filter * -Properties lastlogondate | Where-Object {($_.lastlogondate -le $90days)-AND ($_.Enabled -eq $True)} | Select-Object name, lastlogondate
